@@ -1,0 +1,13 @@
+{% extends 'groups/group_base.html' %}
+{% load bootstrap5 %}
+
+{% block group_content %}
+<h3> Create a new group!</h3>
+<form action="{% url 'groups:create' %}" method="POST" id="groupForm">
+    {% csrf_token %}
+    {% buttons %}
+    {% bootstrap_form form %}
+    <input type="submit" class="btn btn-primary btn-lg" value="Create">
+    {% endbuttons %}
+</form>
+{% endblock %}

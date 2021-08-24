@@ -1,0 +1,76 @@
+.mycontent{
+  padding-top: 25px;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  color:white;
+}
+
+.navbar-brand
+{
+font-size: 30px;
+}
+
+a:hover {
+  color: #91640F;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  font-size: 25px;
+  margin-left:20px;
+
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .24s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 5;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+
