@@ -5,6 +5,7 @@ beautifulsoup4==4.9.3
 certifi==2021.5.30
 cffi==1.14.6
 Django==3.2.5
+django-bootstrap-v5==1.0.5
 django-bootstrap5==2.1.2
 django-braces==1.14.0
 Faker==8.11.0
